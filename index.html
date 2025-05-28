@@ -1,212 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="AI-powered fleet analytics for maritime operations" />
-        <meta name="author" content="" />
-        <title>MarinEOptix - Smart Fleet Analytics</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
-            .marine-feature {
-                background: linear-gradient(135deg, #0066cc, #003366);
-                color: white;
-            }
-            .feature-icon {
-                font-size: 2rem;
-                color: #0066cc;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-5">
-                <a class="navbar-brand" href="#!">MarinEOptix</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#features">Solutions</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#benefits">Benefits</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="AI-powered tools for maritime industry" />
+    <meta name="author" content="" />
+    <title>MarinEOptix | AI Solutions for Maritime</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .marine-gradient {
+            background: linear-gradient(135deg, #0066cc, #003366);
+            color: white;
+        }
+        .product-card {
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .pythia-card {
+            border-top: 4px solid #4CAF50;
+        }
+        .merovingen-card {
+            border-top: 4px solid #FF5722;
+        }
+        .twins-card {
+            border-top: 4px solid #9C27B0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="#!">
+                <i class="bi bi-cpu me-2"></i>MarinEOptix
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- Header-->
-        <header class="marine-feature py-5">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h1 class="display-5 fw-bolder text-white mb-2">Transform Your Fleet Operations with AI</h1>
-                        <p class="lead text-white mb-4">Automated analysis of vessel reports with real-time anomaly detection and predictive insights</p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                            <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Explore Solutions</a>
-                            <a class="btn btn-outline-light btn-lg px-4" href="#contact">Request Demo</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Our AI Solutions</h2>
-                    <p class="lead mb-0">Turning data into actionable maritime intelligence</p>
-                </div>
-                <div class="row gx-5">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature-icon mb-3"><i class="bi bi-file-earmark-text"></i></div>
-                        <h2 class="h4 fw-bolder">Unified Report Processing</h2>
-                        <p>Automatically process PDFs, emails, voice notes and handwritten logs into structured data.</p>
-                    </div>
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="feature-icon mb-3"><i class="bi bi-graph-up-arrow"></i></div>
-                        <h2 class="h4 fw-bolder">Real-Time Monitoring</h2>
-                        <p>Instant alerts for abnormal fuel consumption, engine parameters and navigation issues.</p>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="feature-icon mb-3"><i class="bi bi-lightbulb"></i></div>
-                        <h2 class="h4 fw-bolder">Predictive Analytics</h2>
-                        <p>AI forecasts potential equipment failures before they occur with maintenance recommendations.</p>
+        </div>
+    </nav>
+    <!-- Header-->
+    <header class="marine-gradient py-5">
+        <div class="container px-5">
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h1 class="display-5 fw-bolder text-white mb-2">AI-Powered Maritime Intelligence Suite</h1>
+                    <p class="lead text-white mb-4">Three revolutionary tools to transform vessel operations, risk management and technical knowledge sharing</p>
+                    <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                        <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#products">Explore Tools</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#contact">Request Demo</a>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Benefits section-->
-        <section class="bg-light py-5 border-bottom" id="benefits">
-            <div class="container px-5 my-5">
-                <div class="row gx-5">
-                    <div class="col-lg-6">
-                        <h2 class="fw-bolder mb-4">Key Operational Benefits</h2>
-                        <div class="mb-4">
-                            <h3 class="h5">15-25% Fuel Savings</h3>
-                            <p>Our AI identifies inefficient operations and suggests optimal speed and routing.</p>
+        </div>
+    </header>
+    <!-- Products section-->
+    <section class="py-5" id="products">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Our AI Tool Suite</h2>
+                <p class="lead mb-0">Specialized solutions for maritime challenges</p>
+            </div>
+            <div class="row gx-5">
+                <!-- Pythia Card -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card product-card pythia-card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <div class="product-icon text-success">
+                                    <i class="bi bi-file-earmark-bar-graph"></i>
+                                </div>
+                                <h3 class="card-title">Pythia</h3>
+                                <h4 class="h6 text-muted">Report Intelligence System</h4>
+                            </div>
+                            <p class="card-text mt-3">
+                                Transforms all vessel reports (from crew, bunker suppliers, contractors) into unified dashboards with:
+                            </p>
+                            <ul>
+                                <li>Automated data extraction from any format</li>
+                                <li>Anomaly detection and alerts</li>
+                                <li>Predictive analytics engine</li>
+                                <li>Customizable KPI visualization</li>
+                            </ul>
                         </div>
-                        <div class="mb-4">
-                            <h3 class="h5">50% Less Paperwork</h3>
-                            <p>Automated report processing eliminates manual data entry.</p>
-                        </div>
-                        <div class="mb-4">
-                            <h3 class="h5">Prevent Costly Breakdowns</h3>
-                            <p>Early detection of engine issues reduces unplanned downtime.</p>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a class="btn btn-outline-success" href="#pythia">Learn more</a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h2 class="fw-bolder mb-4">Who Benefits Most</h2>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Fleet Managers</h3>
-                                <p class="card-text">Monitor entire fleets from a single dashboard with prioritized alerts.</p>
+                </div>
+                <!-- Merovingen Card -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card product-card merovingen-card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <div class="product-icon text-warning">
+                                    <i class="bi bi-shield-exclamation"></i>
+                                </div>
+                                <h3 class="card-title">Merovingen</h3>
+                                <h4 class="h6 text-muted">Risk Management Assistant</h4>
+                            </div>
+                            <p class="card-text mt-3">
+                                AI-powered risk assessment tool that helps crews:
+                            </p>
+                            <ul>
+                                <li>Real-time operational risk scoring</li>
+                                <li>Scenario simulation engine</li>
+                                <li>Automated checklist generation</li>
+                                <li>Incident prediction models</li>
+                                <li>Regulatory compliance tracking</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a class="btn btn-outline-warning" href="#merovingen">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- The Twins Card -->
+                <div class="col-lg-4 mb-5">
+                    <div class="card product-card twins-card h-100">
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <div class="product-icon text-primary">
+                                    <i class="bi bi-diagram-3"></i>
+                                </div>
+                                <h3 class="card-title">The Twins</h3>
+                                <h4 class="h6 text-muted">Knowledge Network Engine</h4>
+                            </div>
+                            <p class="card-text mt-3">
+                                Creates a "second brain" for your vessel by:
+                            </p>
+                            <ul>
+                                <li>Aggregating knowledge from all crew inputs</li>
+                                <li>Automatic troubleshooting guides</li>
+                                <li>Equipment-specific knowledge graphs</li>
+                                <li>Voice/photo/text input processing</li>
+                                <li>Expert system for emergency scenarios</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0 text-center">
+                            <a class="btn btn-outline-primary" href="#twins">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="py-5 bg-light" id="solutions">
+        <div class="container px-5 my-5">
+            <!-- Pythia Details -->
+            <div class="row align-items-center mb-5" id="pythia">
+                <div class="col-lg-6">
+                    <h2 class="fw-bolder">Pythia: Your Report Intelligence Hub</h2>
+                    <p class="lead">Transform chaotic reports into clear operational insights</p>
+                    <div class="mb-4">
+                        <h3 class="h5">Supported Inputs:</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Captain's logs (handwritten/typed)</li>
+                                    <li>Engine room reports</li>
+                                    <li>Bunker delivery notes</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Waste disposal certificates</li>
+                                    <li>Maintenance reports</li>
+                                    <li>Port authority forms</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="card mb-3">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Maritime Operators</h3>
-                                <p class="card-text">Optimize vessel performance and reduce operational costs.</p>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="h5">Key Features:</h3>
+                        <ul>
+                            <li>Natural language processing for free-text reports</li>
+                            <li>Automated data validation and cross-checking</li>
+                            <li>Custom alert rules for operational thresholds</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="https://via.placeholder.com/600x400?text=Pythia+Dashboard" alt="Pythia Dashboard">
+                </div>
+            </div>
+            
+            <hr class="my-5">
+            
+            <!-- Merovingen Details -->
+            <div class="row align-items-center mb-5" id="merovingen">
+                <div class="col-lg-6 order-lg-2">
+                    <h2 class="fw-bolder">Merovingen: Proactive Risk Management</h2>
+                    <p class="lead">Anticipate hazards before they become incidents</p>
+                    <div class="mb-4">
+                        <h3 class="h5">Risk Domains Covered:</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Navigation safety</li>
+                                    <li>Engine room operations</li>
+                                    <li>Cargo handling</li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="h5 card-title">Port Authorities</h3>
-                                <p class="card-text">Anticipate vessel arrivals and potential inspection needs.</p>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Crew safety</li>
+                                    <li>Environmental compliance</li>
+                                    <li>Security threats</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
+                    <div class="mb-4">
+                        <h3 class="h5">Key Features:</h3>
+                        <ul>
+                            <li>Real-time risk heat maps</li>
+                            <li>Automated near-miss reporting</li>
+                            <li>Regulatory change alerts</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <img class="img-fluid rounded" src="https://via.placeholder.com/600x400?text=Merovingen+Interface" alt="Merovingen Interface">
                 </div>
             </div>
-        </section>
-        <!-- Testimonials section-->
-        <section class="py-5 border-bottom">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Industry Recognition</h2>
-                    <p class="lead mb-0">Trusted by maritime leaders worldwide</p>
+            
+            <hr class="my-5">
+            
+            <!-- The Twins Details -->
+            <div class="row align-items-center" id="twins">
+                <div class="col-lg-6">
+                    <h2 class="fw-bolder">The Twins: Collective Technical Intelligence</h2>
+                    <p class="lead">Capture and share institutional knowledge effortlessly</p>
+                    <div class="mb-4">
+                        <h3 class="h5">Knowledge Capture Methods:</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Voice memos from crew</li>
+                                    <li>Equipment photos/videos</li>
+                                    <li>Maintenance records</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul>
+                                    <li>Incident reports</li>
+                                    <li>Technical manuals</li>
+                                    <li>Best practice notes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <h3 class="h5">Key Features:</h3>
+                        <ul>
+                            <li>Semantic search across all content</li>
+                            <li>Automated troubleshooting trees</li>
+                            <li>Equipment-specific knowledge portals</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="card mb-4">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">"MarinEOptix reduced our fuel costs by 18% in the first quarter and helped us avoid two potential engine failures."</p>
-                                        <div class="small text-muted">- Chief Operations Officer, Global Shipping Co.</div>
-                                    </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid rounded" src="https://via.placeholder.com/600x400?text=Twins+Knowledge+Map" alt="Twins Knowledge Map">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials section-->
+    <section class="py-5" id="testimonials">
+        <div class="container px-5 my-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder">Proven Results</h2>
+                <p class="lead mb-0">What our maritime partners say</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Testimonial 1-->
+                    <div class="card mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">"Pythia reduced our report processing time by 70% and identified fuel anomalies we'd been missing for months."</p>
+                                    <div class="small text-muted">- Technical Director, Tanker Operator</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body p-4">
-                                <div class="d-flex">
-                                    <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
-                                    <div class="ms-4">
-                                        <p class="mb-1">"The predictive maintenance alerts have transformed how we manage our fleet's operational readiness."</p>
-                                        <div class="small text-muted">- Fleet Manager, Offshore Services Ltd.</div>
-                                    </div>
+                    </div>
+                    <!-- Testimonial 2-->
+                    <div class="card mb-4">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">"Merovingen helped us reduce safety incidents by 40% in the first year through its predictive risk alerts."</p>
+                                    <div class="small text-muted">- Fleet Safety Manager, Container Line</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3-->
+                    <div class="card">
+                        <div class="card-body p-4">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0"><i class="bi bi-chat-right-quote-fill text-primary fs-1"></i></div>
+                                <div class="ms-4">
+                                    <p class="mb-1">"The Twins preserved 30 years of institutional knowledge when our Chief Engineer retired - priceless."</p>
+                                    <div class="small text-muted">- COO, Offshore Services</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Contact section-->
-        <section class="bg-light py-5" id="contact">
-            <div class="container px-5 my-5 px-5">
-                <div class="text-center mb-5">
-                    <div class="feature-icon mb-3"><i class="bi bi-envelope"></i></div>
-                    <h2 class="fw-bolder">Request a Demo</h2>
-                    <p class="lead mb-0">See how MarinEOptix can transform your fleet operations</p>
+        </div>
+    </section>
+
+    <!-- Contact section-->
+    <section class="bg-light py-5" id="contact">
+        <div class="container px-5 my-5 px-5">
+            <div class="text-center mb-5">
+                <div class="feature-icon mb-3">
+                    <i class="bi bi-envelope"></i>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-6">
-                        <form id="contactForm">
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
-                                <label for="name">Full name</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
-                                <label for="email">Email address</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="company" type="text" placeholder="Your company" required />
-                                <label for="company">Company</label>
-                            </div>
-                            <div class="form-floating mb-3">
-                                <select class="form-select" id="fleetSize" required>
-                                    <option value="">Select fleet size</option>
-                                    <option value="1-5">1-5 vessels</option>
-                                    <option value="6-20">6-20 vessels</option>
-                                    <option value="20+">20+ vessels</option>
-                                </select>
-                                <label for="fleetSize">Fleet Size</label>
-                            </div>
-                            <div class="d-grid">
-                                <button class="btn btn-primary btn-lg" type="submit">Request Demo</button>
-                            </div>
-                        </form>
-                    </div>
+                <h2 class="fw-bolder">Ready to Transform Your Operations?</h2>
+                <p class="lead mb-0">Get a customized demo of our AI tools</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
+                            <label for="name">Full name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
+                            <label for="email">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="company" type="text" placeholder="Your company" required />
+                            <label for="company">Company</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="interest" required>
+                                <option value="">Which tool interests you?</option>
+                                <option value="pythia">Pythia Report Intelligence</option>
+                                <option value="merovingen">Merovingen Risk Management</option>
+                                <option value="twins">The Twins Knowledge Engine</option>
+                                <option value="all">Full Suite</option>
+                            </select>
+                            <label for="interest">Primary Interest</label>
+                        </div>
+                        <div class="d-grid">
+                            <button class="btn btn-primary btn-lg" type="submit">Request Demo</button>
+                        </div>
+                    </form>
                 </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container px-5">
-                <p class="m-0 text-center text-white">Copyright &copy; MarinEOptix 2023</p>
+        </div>
+    </section>
+
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="m-0 text-white">Copyright &copy; MarinEOptix 2023</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a class="text-white me-3" href="#!">Privacy Policy</a>
+                    <a class="text-white" href="#!">Terms of Use</a>
+                </div>
             </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
