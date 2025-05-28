@@ -37,6 +37,14 @@
         .twins-card {
             border-top: 4px solid #9C27B0;
         }
+        .email-contact {
+            text-align: center;
+            padding: 40px 0;
+        }
+        .email-btn {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+        }
     </style>
 </head>
 <body>
@@ -53,7 +61,6 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" href="#products">Products</a></li>
                     <li class="nav-item"><a class="nav-link" href="#solutions">Solutions</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Case Studies</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -68,7 +75,7 @@
                     <p class="lead text-white mb-4">Three revolutionary tools to transform vessel operations, risk management and technical knowledge sharing</p>
                     <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                         <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#products">Explore Tools</a>
-                        <a class="btn btn-outline-light btn-lg px-4" href="#contact">Request Demo</a>
+                        <a class="btn btn-outline-light btn-lg px-4" href="#contact">Contact Us</a>
                     </div>
                 </div>
             </div>
@@ -289,48 +296,18 @@
         </div>
     </section>
 
-   
-
     <!-- Contact section-->
-    <section class="bg-light py-5" id="contact">
-        <div class="container px-5 my-5 px-5">
-            <div class="text-center mb-5">
+    <section class="py-5" id="contact">
+        <div class="container">
+            <div class="email-contact">
                 <div class="feature-icon mb-3">
-                    <i class="bi bi-envelope"></i>
+                    <i class="bi bi-envelope" style="font-size: 3rem;"></i>
                 </div>
-                <h2 class="fw-bolder">Ready to Transform Your Operations?</h2>
-                <p class="lead mb-0">Get a customized demo of our AI tools</p>
-            </div>
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-6">
-                    <form id="contactForm">
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." required />
-                            <label for="name">Full name</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" required />
-                            <label for="email">Email address</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="company" type="text" placeholder="Your company" required />
-                            <label for="company">Company</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <select class="form-select" id="interest" required>
-                                <option value="">Which tool interests you?</option>
-                                <option value="pythia">Pythia Report Intelligence</option>
-                                <option value="merovingen">Merovingen Risk Management</option>
-                                <option value="twins">The Twins Knowledge Engine</option>
-                                <option value="all">Full Suite</option>
-                            </select>
-                            <label for="interest">Primary Interest</label>
-                        </div>
-                        <div class="d-grid">
-                            <button class="btn btn-primary btn-lg" type="submit">Request Demo</button>
-                        </div>
-                    </form>
-                </div>
+                <h2 class="fw-bolder">Contact Us</h2>
+                <p class="lead mb-4">Reach out to us via email</p>
+                <a class="btn btn-primary btn-lg email-btn" href="mailto:2468by4koff@gmail.ru">
+                    <i class="bi bi-envelope me-2"></i>Send Email
+                </a>
             </div>
         </div>
     </section>
